@@ -33,7 +33,7 @@ router.post('/', (req, res)=>{
 			
 			console.log(results[0].password);
 			res.cookie('uname', req.body.username);
-			res.redirect('/home');
+			res.redirect('/job');
 			
 		}
 		else{

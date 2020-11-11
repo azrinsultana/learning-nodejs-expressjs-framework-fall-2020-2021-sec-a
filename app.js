@@ -8,6 +8,7 @@ const login				= require('./controllers/login');
 const logout			= require('./controllers/logout');
 const home				= require('./controllers/home');
 const user				= require('./controllers/user');
+const job				= require('./controllers/job');
 const app				= express();
 const port				= 3000;
 
@@ -20,16 +21,17 @@ app.use('/abc', express.static('assets'))
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieParser());
 app.use(exSession({secret: 'secret value', saveUninitialized: true, resave: false}));
-
-
 app.use('/login', login);
 app.use('/home', home);
 app.use('/logout', logout);
 app.use('/user', user);
+app.use('/job',job);
+
 
 //router
 app.get('/', (req, res)=>{
 	res.send('Welcome');
+
 });
 
 //server startup

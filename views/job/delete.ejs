@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+        delete job
+    </title>
+</head>
+<body>
+	<form method="post">
+		<fieldset>
+			<legend>Delet job</legend>
+			<table>
+				<tr>
+					<td>Username</td>
+					<td><input type="text" name="companyname" value="<%=job[0].companyname%>"></td>
+					
+				</tr>
+				<tr>
+					<td>Title</td>
+					<td><input type="text" name="title" value="<%=job[0].title%>"></td>
+				</tr>
+				
+				<tr>
+					<td>Location</td>
+					<td><input type="text" name="location" value="<%=job[0].location%>"></td>
+				</tr>
+				<tr>
+					<td>salary</td>
+					<td><input type="text" name="salary" value="<%=job[0].salary%>"></td>
+				</tr>
+				
+			
+				<tr>
+					<td></td>
+					<td><input type="submit" name="submit" value="Submit"></td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>
