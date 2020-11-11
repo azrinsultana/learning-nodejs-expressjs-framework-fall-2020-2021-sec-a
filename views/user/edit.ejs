@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit User</title>
+</head>
+<body>
+	
+	<form method="post">
+		<fieldset>
+			<legend>Edit User</legend>
+			<table>
+				<tr>
+					<td>Username</td>
+					<td><input type="text" name="username" value="<%=employee.username%>"></td>
+					
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="password" name="password" value="<%=employee.password%>"></td>
+				</tr>
+				
+				<tr>
+					<td>Employee Name</td>
+					<td><input type="text" name="employeename" value="<%=employee.employeename%>"></td>
+				</tr>
+				<tr>
+					<td>Company Name</td>
+					<td><input type="text" name="companyname" value="<%=employee.companyname%>"></td>
+				</tr>
+				<tr>
+					<td>Contatc Number</td>
+					<td><input type="text" name="contactno" value="<%=employee.contactno%>"></td>
+				</tr>
+			
+				<tr>
+					<td></td>
+					<td><input type="submit" name="submit" value="Submit"></td>
+				</tr>
+			</table>
+
+
+
+		</fieldset>
+	</form>
+</body>
+</html>
